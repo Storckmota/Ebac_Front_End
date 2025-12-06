@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Adivinhação</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+
+    <main class="container">
+        <h1>Adivinhe o número de 1 a 100</h1>
+
+        <div class="inputs">
+            <input 
+                type="number" 
+                id="chute" 
+                placeholder="Digite um número"
+                min="1" 
+                max="100"
+            >
+            <button id="btnChutar">Chutar</button>
+        </div>
+
+        <p id="resultado" class="mensagem"></p>
+        <p id="tentativas" class="mensagem">Tentativas restantes: 10</p>
+    </main>
+
+    
+</body>
+</html>
