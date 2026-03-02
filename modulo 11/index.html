@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agência Criativa Web — Design Digital</title>
+  <link rel="stylesheet" href="estilos.css" />
+  <!-- Google Fonts: Clash Display + DM Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===================== HEADER / NAV ===================== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+
+      <!-- Logo -->
+      <a href="#home" class="logo" aria-label="Agência Criativa Web — página inicial">
+        <span class="logo__mark">✦</span>
+        <span class="logo__text">Criativa<em>Web</em></span>
+      </a>
+
+      <!-- Navegação desktop -->
+      <nav class="nav" aria-label="Menu principal">
+        <ul class="nav__list">
+          <li><a href="#home"      class="nav__link">Home</a></li>
+          <li><a href="#sobre"     class="nav__link">Sobre</a></li>
+          <li><a href="#servicos"  class="nav__link">Serviços</a></li>
+          <li><a href="#depoimentos" class="nav__link">Depoimentos</a></li>
+          <li><a href="#contato"   class="nav__link nav__link--cta">Contato</a></li>
+        </ul>
+      </nav>
+
+      <!-- Botão hambúrguer (mobile) -->
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+        <span class="hamburger__bar"></span>
+        <span class="hamburger__bar"></span>
+        <span class="hamburger__bar"></span>
+      </button>
+    </div>
+
+    <!-- Menu mobile (dropdown) -->
+    <nav class="nav-mobile" id="navMobile" aria-label="Menu mobile" aria-hidden="true">
+      <ul class="nav-mobile__list">
+        <li><a href="#home"        class="nav-mobile__link">Home</a></li>
+        <li><a href="#sobre"       class="nav-mobile__link">Sobre</a></li>
+        <li><a href="#servicos"    class="nav-mobile__link">Serviços</a></li>
+        <li><a href="#depoimentos" class="nav-mobile__link">Depoimentos</a></li>
+        <li><a href="#contato"     class="nav-mobile__link">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===================== SEÇÃO HOME (BANNER) ===================== -->
+    <section class="hero" id="home" aria-label="Banner principal">
+      <div class="hero__noise"></div>
+      <div class="container hero__inner">
+
+        <div class="hero__badge">
+          <span class="hero__badge-dot"></span>
+          Disponível para novos projetos
+        </div>
+
+        <h1 class="hero__title">
+          Transformamos<br />
+          <em>ideias</em> em<br />
+          experiências digitais.
+        </h1>
+
+        <p class="hero__subtitle">
+          Criamos marcas, interfaces e estratégias digitais que conectam
+          seu negócio às pessoas certas — com design que fica na memória.
+        </p>
+
+        <div class="hero__actions">
+          <a href="#servicos" class="btn btn--primary">Ver serviços</a>
+          <a href="#sobre"    class="btn btn--ghost">Conheça a agência →</a>
+        </div>
+
+        <!-- Estatísticas rápidas -->
+        <div class="hero__stats">
+          <div class="stat">
+            <span class="stat__number">120+</span>
+            <span class="stat__label">Projetos entregues</span>
+          </div>
+          <div class="stat">
+            <span class="stat__number">8 anos</span>
+            <span class="stat__label">No mercado</span>
+          </div>
+          <div class="stat">
+            <span class="stat__number">98%</span>
+            <span class="stat__label">Clientes satisfeitos</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Elemento decorativo flutuante -->
+      <div class="hero__deco" aria-hidden="true">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+          <path fill="var(--accent)" d="M47.5,-61.3C59.8,-51.5,66.9,-35.3,69.4,-18.9C71.9,-2.5,69.8,14.2,63.2,28.9C56.6,43.7,45.5,56.5,31.5,63.3C17.4,70.1,0.4,70.8,-15.4,66.6C-31.1,62.4,-45.5,53.3,-55.5,40.4C-65.5,27.6,-71.1,10.9,-69.1,-4.7C-67.2,-20.4,-57.7,-34.9,-45.5,-44.9C-33.3,-54.8,-18.5,-60.2,-1.3,-58.7C15.9,-57.2,35.2,-71.1,47.5,-61.3Z" transform="translate(100 100)" />
+        </svg>
+      </div>
+    </section>
+
+    <!-- ===================== SEÇÃO SOBRE NÓS ===================== -->
+    <section class="sobre" id="sobre" aria-labelledby="sobre-titulo">
+      <div class="container sobre__inner">
+
+        <div class="sobre__media">
+          <!-- Imagem responsiva com srcset -->
+          <img
+            class="sobre__img"
+            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&q=80"
+            srcset="
+              https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400&q=75 400w,
+              https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&q=80 600w,
+              https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=900&q=80 900w
+            "
+            sizes="(max-width: 768px) 100vw, 45vw"
+            alt="Equipe da Agência Criativa Web trabalhando em projetos digitais"
+            loading="lazy"
+            width="600" height="450"
+          />
+          <div class="sobre__img-badge" aria-hidden="true">
+            <span>✦</span> Desde 2016
+          </div>
+        </div>
+
+        <div class="sobre__content">
+          <p class="section-label">Sobre Nós</p>
+          <h2 class="section-title" id="sobre-titulo">
+            Somos uma equipe apaixonada por criar conexões digitais.
+          </h2>
+          <p class="sobre__text">
+            A <strong>Agência Criativa Web</strong> nasceu da convicção de que design e tecnologia, quando unidos com propósito,
+            têm o poder de transformar negócios. Em 8 anos de mercado, ajudamos mais de 120 empresas a crescerem
+            no mundo digital — de startups a marcas consolidadas.
+          </p>
+          <p class="sobre__text">
+            Nosso processo é colaborativo, transparente e orientado a resultados. Não entregamos apenas peças bonitas;
+            entregamos estratégias que funcionam.
+          </p>
+
+          <!-- Valores -->
+          <ul class="sobre__valores" aria-label="Nossos valores">
+            <li class="sobre__valor">
+              <span class="sobre__valor-icon" aria-hidden="true">◈</span>
+              <div>
+                <strong>Criatividade com propósito</strong>
+                <p>Cada decisão estética nasce de uma estratégia.</p>
+              </div>
+            </li>
+            <li class="sobre__valor">
+              <span class="sobre__valor-icon" aria-hidden="true">◈</span>
+              <div>
+                <strong>Tecnologia humana</strong>
+                <p>Código limpo a serviço de experiências memoráveis.</p>
+              </div>
+            </li>
+            <li class="sobre__valor">
+              <span class="sobre__valor-icon" aria-hidden="true">◈</span>
+              <div>
+                <strong>Parceria de longo prazo</strong>
+                <p>Crescemos junto com nossos clientes.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SEÇÃO SERVIÇOS ===================== -->
+    <section class="servicos" id="servicos" aria-labelledby="servicos-titulo">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">O que fazemos</p>
+          <h2 class="section-title" id="servicos-titulo">
+            Serviços feitos para<br />fazer sua marca crescer.
+          </h2>
+        </div>
+
+        <!-- CSS Grid para os cards -->
+        <div class="servicos__grid">
+
+          <article class="servico-card">
+            <div class="servico-card__icon" aria-hidden="true">⬡</div>
+            <h3 class="servico-card__title">Design Gráfico</h3>
+            <p class="servico-card__desc">
+              Identidade visual, papelaria corporativa, peças para redes sociais e tudo que compõe a face da sua marca.
+            </p>
+            <a href="#contato" class="servico-card__link">Saiba mais →</a>
+          </article>
+
+          <article class="servico-card servico-card--destaque">
+            <div class="servico-card__icon" aria-hidden="true">◻</div>
+            <h3 class="servico-card__title">Desenvolvimento Web</h3>
+            <p class="servico-card__desc">
+              Sites institucionais, landing pages, e-commerces e aplicações web rápidas, acessíveis e responsivas.
+            </p>
+            <a href="#contato" class="servico-card__link">Saiba mais →</a>
+          </article>
+
+          <article class="servico-card">
+            <div class="servico-card__icon" aria-hidden="true">△</div>
+            <h3 class="servico-card__title">Branding</h3>
+            <p class="servico-card__desc">
+              Posicionamento de marca, naming, brandbook completo e estratégia de comunicação visual coerente e consistente.
+            </p>
+            <a href="#contato" class="servico-card__link">Saiba mais →</a>
+          </article>
+
+          <article class="servico-card">
+            <div class="servico-card__icon" aria-hidden="true">◎</div>
+            <h3 class="servico-card__title">UI/UX Design</h3>
+            <p class="servico-card__desc">
+              Pesquisa com usuários, wireframes, protótipos interativos e design systems para produtos digitais escaláveis.
+            </p>
+            <a href="#contato" class="servico-card__link">Saiba mais →</a>
+          </article>
+
+          <article class="servico-card">
+            <div class="servico-card__icon" aria-hidden="true">⬢</div>
+            <h3 class="servico-card__title">Motion Design</h3>
+            <p class="servico-card__desc">
+              Animações para redes sociais, vídeos institucionais, motion graphics e conteúdo audiovisual de impacto.
+            </p>
+            <a href="#contato" class="servico-card__link">Saiba mais →</a>
+          </article>
+
+          <article class="servico-card">
+            <div class="servico-card__icon" aria-hidden="true">✦</div>
+            <h3 class="servico-card__title">Marketing Digital</h3>
+            <p class="servico-card__desc">
+              Estratégias de conteúdo, gestão de redes sociais, campanhas pagas (Google Ads, Meta Ads) e SEO técnico.
+            </p>
+            <a href="#contato" class="servico-card__link">Saiba mais →</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SEÇÃO DEPOIMENTOS ===================== -->
+    <section class="depoimentos" id="depoimentos" aria-labelledby="depoimentos-titulo">
+      <div class="container">
+        <div class="section-header section-header--center">
+          <p class="section-label">Depoimentos</p>
+          <h2 class="section-title" id="depoimentos-titulo">O que nossos clientes dizem.</h2>
+        </div>
+
+        <div class="depoimentos__grid">
+
+          <blockquote class="depoimento-card">
+            <p class="depoimento-card__texto">
+              "A Criativa Web transformou completamente a identidade da nossa empresa. O processo foi impecável e o resultado superou nossas expectativas. Recomendo sem hesitar."
+            </p>
+            <footer class="depoimento-card__footer">
+              <img
+                class="depoimento-card__avatar"
+                src="https://i.pravatar.cc/80?img=47"
+                srcset="https://i.pravatar.cc/80?img=47 1x, https://i.pravatar.cc/160?img=47 2x"
+                alt="Foto de Mariana Costa"
+                loading="lazy"
+                width="48" height="48"
+              />
+              <div>
+                <cite class="depoimento-card__nome">Mariana Costa</cite>
+                <span class="depoimento-card__cargo">CEO — Bloom Studio</span>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="depoimento-card depoimento-card--destaque">
+            <p class="depoimento-card__texto">
+              "Parceiros incríveis. Entregaram nosso e-commerce no prazo, com um design moderno e conversão muito acima da média. Já contratamos novamente para o nosso app."
+            </p>
+            <footer class="depoimento-card__footer">
+              <img
+                class="depoimento-card__avatar"
+                src="https://i.pravatar.cc/80?img=12"
+                srcset="https://i.pravatar.cc/80?img=12 1x, https://i.pravatar.cc/160?img=12 2x"
+                alt="Foto de Rafael Andrade"
+                loading="lazy"
+                width="48" height="48"
+              />
+              <div>
+                <cite class="depoimento-card__nome">Rafael Andrade</cite>
+                <span class="depoimento-card__cargo">Fundador — Veste.io</span>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="depoimento-card">
+            <p class="depoimento-card__texto">
+              "Trabalhar com a equipe da Criativa Web foi uma experiência fantástica. Profissionais atentos aos detalhes, criativos e sempre disponíveis para ajustar o que for necessário."
+            </p>
+            <footer class="depoimento-card__footer">
+              <img
+                class="depoimento-card__avatar"
+                src="https://i.pravatar.cc/80?img=25"
+                srcset="https://i.pravatar.cc/80?img=25 1x, https://i.pravatar.cc/160?img=25 2x"
+                alt="Foto de Camila Ferreira"
+                loading="lazy"
+                width="48" height="48"
+              />
+              <div>
+                <cite class="depoimento-card__nome">Camila Ferreira</cite>
+                <span class="depoimento-card__cargo">Diretora de Marketing — NovaTech</span>
+              </div>
+            </footer>
+          </blockquote>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SEÇÃO CONTATO ===================== -->
+    <section class="contato" id="contato" aria-labelledby="contato-titulo">
+      <div class="container contato__inner">
+
+        <!-- Informações de contato -->
+        <div class="contato__info">
+          <p class="section-label">Entre em contato</p>
+          <h2 class="section-title" id="contato-titulo">
+            Vamos criar algo incrível juntos?
+          </h2>
+          <p class="contato__desc">
+            Preencha o formulário ou use um dos nossos canais diretos. Respondemos em até 24 horas.
+          </p>
+
+          <address class="contato__dados">
+            <div class="contato__item">
+              <span class="contato__icon" aria-hidden="true">📍</span>
+              <div>
+                <strong>Endereço</strong>
+                <p>Av. Paulista, 1000 — Bela Vista<br />São Paulo – SP, 01310-100</p>
+              </div>
+            </div>
+            <div class="contato__item">
+              <span class="contato__icon" aria-hidden="true">📞</span>
+              <div>
+                <strong>Telefone</strong>
+                <p><a href="tel:+551199998888">(11) 9999-8888</a></p>
+              </div>
+            </div>
+            <div class="contato__item">
+              <span class="contato__icon" aria-hidden="true">✉</span>
+              <div>
+                <strong>E-mail</strong>
+                <p><a href="mailto:oi@criativaweb.com.br">oi@criativaweb.com.br</a></p>
+              </div>
+            </div>
+          </address>
+        </div>
+
+        <!-- Formulário de contato -->
+        <div class="contato__form-wrap">
+          <form class="form" id="formContato" novalidate aria-label="Formulário de contato">
+
+            <div class="form__group">
+              <label for="nome" class="form__label">Seu nome</label>
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                class="form__input"
+                placeholder="Ex.: João Silva"
+                required
+                autocomplete="name"
+              />
+            </div>
+
+            <div class="form__group">
+              <label for="email" class="form__label">E-mail</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form__input"
+                placeholder="voce@exemplo.com"
+                required
+                autocomplete="email"
+              />
+            </div>
+
+            <div class="form__group">
+              <label for="servico" class="form__label">Serviço de interesse</label>
+              <select id="servico" name="servico" class="form__input form__select">
+                <option value="">Selecione um serviço…</option>
+                <option value="design">Design Gráfico</option>
+                <option value="web">Desenvolvimento Web</option>
+                <option value="branding">Branding</option>
+                <option value="uiux">UI/UX Design</option>
+                <option value="motion">Motion Design</option>
+                <option value="marketing">Marketing Digital</option>
+              </select>
+            </div>
+
+            <div class="form__group">
+              <label for="mensagem" class="form__label">Mensagem</label>
+              <textarea
+                id="mensagem"
+                name="mensagem"
+                class="form__input form__textarea"
+                placeholder="Conte-nos sobre seu projeto…"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--full">
+              Enviar mensagem ✦
+            </button>
+
+            <!-- Feedback de envio (exibido via JS) -->
+            <p class="form__success" id="formSuccess" aria-live="polite" hidden>
+              ✅ Mensagem enviada! Entraremos em contato em breve.
+            </p>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#home" class="logo logo--footer" aria-label="Agência Criativa Web — topo">
+        <span class="logo__mark">✦</span>
+        <span class="logo__text">Criativa<em>Web</em></span>
+      </a>
+      <p class="footer__copy">
+        © 2024 Agência Criativa Web. Todos os direitos reservados.
+      </p>
+      <nav class="footer__nav" aria-label="Links do rodapé">
+        <a href="#home">Home</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- ===================== JAVASCRIPT ===================== -->
+  <script>
+    /* ── Hambúrguer menu ── */
+    const hamburger = document.getElementById('hamburger');
+    const navMobile = document.getElementById('navMobile');
+
+    hamburger.addEventListener('click', () => {
+      const isOpen = navMobile.classList.toggle('nav-mobile--open');
+      hamburger.classList.toggle('hamburger--open', isOpen);
+      hamburger.setAttribute('aria-expanded', isOpen);
+      navMobile.setAttribute('aria-hidden', !isOpen);
+    });
+
+    /* Fecha menu mobile ao clicar em link */
+    navMobile.querySelectorAll('.nav-mobile__link').forEach(link => {
+      link.addEventListener('click', () => {
+        navMobile.classList.remove('nav-mobile--open');
+        hamburger.classList.remove('hamburger--open');
+        hamburger.setAttribute('aria-expanded', 'false');
+        navMobile.setAttribute('aria-hidden', 'true');
+      });
+    });
+
+    /* ── Header com fundo ao scrollar ── */
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('header--scrolled', window.scrollY > 40);
+    });
+
+    /* ── Formulário — feedback visual ── */
+    const form      = document.getElementById('formContato');
+    const formMsg   = document.getElementById('formSuccess');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      if (!form.checkValidity()) { form.reportValidity(); return; }
+      formMsg.hidden = false;
+      form.reset();
+      setTimeout(() => { formMsg.hidden = true; }, 5000);
+    });
+
+    /* ── Animação de entrada dos elementos ── */
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll(
+      '.servico-card, .depoimento-card, .sobre__content, .sobre__media, .stat'
+    ).forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
