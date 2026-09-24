@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "sass": "sass scss/estilos.scss css/estilos.css",
+    "sass:watch": "sass --watch scss/estilos.scss:css/estilos.css"
+  },
+  "devDependencies": {
+    "sass": "^1.0.0"
+  }
+}

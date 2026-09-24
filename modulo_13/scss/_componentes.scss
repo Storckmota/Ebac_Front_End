@@ -1,0 +1,44 @@
+@use "variaveis" as v;
+@use "mixins" as m;
+
+.button {
+  @include m.botao-padrao;
+
+  &:hover {
+    opacity: 0.85;
+  }
+
+  &--secondary {
+    background-color: v.$cor-secundaria;
+  }
+}
+
+.card {
+  padding: v.$espacamento;
+  border-radius: v.$border-radius;
+  background-color: v.$cor-branca;
+
+  &__title {
+    margin-bottom: calc(v.$espacamento / 2);
+  }
+
+  &__text {
+    color: v.$cor-texto-claro;
+  }
+}
+
+.nav {
+  &__list {
+    display: flex;
+    gap: v.$espacamento;
+    list-style: none;
+  }
+
+  &__link {
+    text-decoration: none;
+
+    &:hover {
+      color: v.$cor-primaria;
+    }
+  }
+}

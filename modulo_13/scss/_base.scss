@@ -1,0 +1,26 @@
+@use "variaveis" as v;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: v.$fonte-principal;
+  color: v.$cor-texto;
+  background-color: v.$cor-branca;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+}

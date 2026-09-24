@@ -1,0 +1,23 @@
+@use "variaveis" as v;
+
+@mixin container {
+  width: 90%;
+  max-width: v.$largura-container;
+  margin: 0 auto;
+}
+
+@mixin botao-padrao {
+  display: inline-block;
+  padding: calc(v.$espacamento / 2) v.$espacamento;
+  border: none;
+  border-radius: v.$border-radius;
+  background-color: v.$cor-primaria;
+  color: v.$cor-branca;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+@mixin espacamento-secao {
+  padding: v.$espacamento-grande 0;
+}

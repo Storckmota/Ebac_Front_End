@@ -1,0 +1,55 @@
+@use "variaveis" as v;
+@use "mixins" as m;
+
+.container {
+  @include m.container;
+}
+
+.header {
+  padding: calc(v.$espacamento / 2) 0;
+
+  &__container {
+    @include m.container;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.hero {
+  @include m.espacamento-secao;
+
+  &__container {
+    @include m.container;
+
+    display: flex;
+    align-items: center;
+    gap: v.$espacamento;
+  }
+
+  &__content {
+    flex: 1;
+  }
+
+  &__image {
+    flex: 1;
+  }
+}
+
+.services {
+  @include m.espacamento-secao;
+  background-color: v.$cor-fundo;
+
+  &__container {
+    @include m.container;
+  }
+}
+
+.footer {
+  padding: v.$espacamento 0;
+
+  &__container {
+    @include m.container;
+  }
+}
